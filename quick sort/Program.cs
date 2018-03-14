@@ -33,6 +33,7 @@ namespace quick_sort
 			var array = new[] { 616,20,0 };
 			QuickSort.Sort(array);
 
+			return QuickSort.IsSorted(array);
 		}
 
 		static bool TestTwo()
@@ -43,6 +44,7 @@ namespace quick_sort
 
 			QuickSort.Sort(array);
 
+			return QuickSort.IsSorted(array);
 		}
 
 		static bool TestThree()
@@ -53,6 +55,7 @@ namespace quick_sort
 				array[i] = rand.Next();
 			QuickSort.Sort(array);
 
+			return QuickSort.IsSorted(array);
 		}
 
 		static bool TestFive()
@@ -60,6 +63,7 @@ namespace quick_sort
 			var array = new int[0];
 			QuickSort.Sort(array);
 
+			return QuickSort.IsSorted(array);
 		}
 
 		static bool TestSix()
@@ -72,6 +76,7 @@ namespace quick_sort
 
 			QuickSort.Sort(array);
 
+			return QuickSort.IsSorted(array);
 		}
 	}
 
@@ -104,6 +109,7 @@ namespace quick_sort
 				Sort(arr, 0, len - 1);
 		}
 
+		public static bool IsSorted(int[] arr)
 		{
 			var len = arr.Length;
 			if (len == 0 || len == 1) return true;

@@ -109,6 +109,35 @@ namespace quick_sort
 				Sort(arr, 0, len - 1);
 		}
 
+		static void Sorts(int[] arr, object[] obj, int left, int right)
+		{
+			if (right == left) return;
+			var pivot = arr[right];
+			var storeIndex = left;
+			for (int i = left; i <= right - 1; i++)
+				if (arr[i] <= pivot)
+				{
+					Swap(ref arr[i], ref arr[storeIndex]);
+					Swap(ref obj[i], ref obj[storeIndex]);
+					storeIndex++;
+				}
+
+			Swap(ref arr[storeIndex], ref arr[right]);
+			Swap(ref obj[storeIndex], ref obj[right]);
+
+			if (storeIndex > left) Sorts(arr, obj, left, storeIndex - 1);
+			if (storeIndex < right) Sorts(arr, obj, storeIndex + 1, right);
+		}
+
+		public static void Sort(int[] arr, object[] obj)
+		{
+			var len = arr.Length;
+			if (len == 0)
+				Sorts(arr, obj, 0, len);
+			else
+				Sorts(arr, obj, 0, len - 1);
+		}
+
 		public static bool IsSorted(int[] arr)
 		{
 			var len = arr.Length;

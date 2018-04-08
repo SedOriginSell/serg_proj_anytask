@@ -1,0 +1,7 @@
+D:\github\serg_proj_anytask\quick sort\bin\Debug\quick sort.exe.config
+D:\github\serg_proj_anytask\quick sort\bin\Debug\quick sort.exe
+D:\github\serg_proj_anytask\quick sort\bin\Debug\quick sort.pdb
+D:\github\serg_proj_anytask\quick sort\obj\Debug\quick sort.csprojResolveAssemblyReference.cache
+D:\github\serg_proj_anytask\quick sort\obj\Debug\quick sort.csproj.CoreCompileInputs.cache
+D:\github\serg_proj_anytask\quick sort\obj\Debug\quick sort.exe
+D:\github\serg_proj_anytask\quick sort\obj\Debug\quick sort.pdb

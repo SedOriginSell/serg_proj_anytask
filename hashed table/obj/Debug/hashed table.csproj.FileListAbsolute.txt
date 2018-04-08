@@ -1,0 +1,13 @@
+D:\github\serg_proj_anytask\hashed table\bin\Debug\hashed table.exe.config
+D:\github\serg_proj_anytask\hashed table\bin\Debug\hashed table.exe
+D:\github\serg_proj_anytask\hashed table\bin\Debug\hashed table.pdb
+D:\github\serg_proj_anytask\hashed table\bin\Debug\bin search.exe
+D:\github\serg_proj_anytask\hashed table\bin\Debug\quick sort.exe
+D:\github\serg_proj_anytask\hashed table\bin\Debug\bin search.pdb
+D:\github\serg_proj_anytask\hashed table\bin\Debug\bin search.exe.config
+D:\github\serg_proj_anytask\hashed table\bin\Debug\quick sort.pdb
+D:\github\serg_proj_anytask\hashed table\bin\Debug\quick sort.exe.config
+D:\github\serg_proj_anytask\hashed table\obj\Debug\hashed table.csprojResolveAssemblyReference.cache
+D:\github\serg_proj_anytask\hashed table\obj\Debug\hashed table.csproj.CoreCompileInputs.cache
+D:\github\serg_proj_anytask\hashed table\obj\Debug\hashed table.exe
+D:\github\serg_proj_anytask\hashed table\obj\Debug\hashed table.pdb

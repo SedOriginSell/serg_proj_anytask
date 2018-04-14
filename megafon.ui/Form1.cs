@@ -13,6 +13,7 @@ namespace megafon.ui
 		public int elements { get; private set; }
 		public List<Megafon> mainList;
 
+
 		private void add( Megafon inf )
 		{
 			mainList.Add(inf);

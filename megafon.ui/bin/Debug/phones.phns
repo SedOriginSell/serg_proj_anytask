@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ArrayOfMegafon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Megafon>
+    <PhoneNumber>+7 (999) 999-99-99</PhoneNumber>
+    <FullName>азаззаазз</FullName>
+    <Address>Россия 1</Address>
+    <BuyDate>2018-04-14T17:57:16.595325+05:00</BuyDate>
+    <Tariff>ТРЕТИЙ</Tariff>
+  </Megafon>
+</ArrayOfMegafon>

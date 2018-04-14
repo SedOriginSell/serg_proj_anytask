@@ -1,0 +1,6 @@
+D:\github\serg_proj_anytask\bin search\bin\Release\bin search.exe.config
+D:\github\serg_proj_anytask\bin search\bin\Release\bin search.exe
+D:\github\serg_proj_anytask\bin search\bin\Release\bin search.pdb
+D:\github\serg_proj_anytask\bin search\obj\Release\bin search.csproj.CoreCompileInputs.cache
+D:\github\serg_proj_anytask\bin search\obj\Release\bin search.exe
+D:\github\serg_proj_anytask\bin search\obj\Release\bin search.pdb

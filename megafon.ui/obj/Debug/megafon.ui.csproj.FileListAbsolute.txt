@@ -1,0 +1,14 @@
+D:\github\serg_proj_anytask\megafon.ui\obj\Debug\megafon.ui.addedit.resources
+D:\github\serg_proj_anytask\megafon.ui\obj\Debug\megafon.ui.Form1.resources
+D:\github\serg_proj_anytask\megafon.ui\obj\Debug\megafon.ui.Properties.Resources.resources
+D:\github\serg_proj_anytask\megafon.ui\obj\Debug\megafon.ui.csproj.GenerateResource.Cache
+D:\github\serg_proj_anytask\megafon.ui\obj\Debug\megafon.ui.csproj.CoreCompileInputs.cache
+D:\github\serg_proj_anytask\megafon.ui\obj\Debug\megafon.ui.csprojResolveAssemblyReference.cache
+D:\github\serg_proj_anytask\megafon.ui\bin\Debug\megafon.ui.exe.config
+D:\github\serg_proj_anytask\megafon.ui\bin\Debug\megafon.ui.exe
+D:\github\serg_proj_anytask\megafon.ui\bin\Debug\megafon.ui.pdb
+D:\github\serg_proj_anytask\megafon.ui\bin\Debug\megafon base.dll
+D:\github\serg_proj_anytask\megafon.ui\bin\Debug\megafon base.pdb
+D:\github\serg_proj_anytask\megafon.ui\bin\Debug\megafon base.dll.config
+D:\github\serg_proj_anytask\megafon.ui\obj\Debug\megafon.ui.exe
+D:\github\serg_proj_anytask\megafon.ui\obj\Debug\megafon.ui.pdb

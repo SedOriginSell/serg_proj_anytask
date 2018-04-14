@@ -1,0 +1,7 @@
+D:\github\serg_proj_anytask\megafon base\obj\Debug\megafon base.csproj.CoreCompileInputs.cache
+D:\github\serg_proj_anytask\megafon base\obj\Debug\megafon base.csprojResolveAssemblyReference.cache
+D:\github\serg_proj_anytask\megafon base\bin\Debug\megafon base.dll.config
+D:\github\serg_proj_anytask\megafon base\bin\Debug\megafon base.dll
+D:\github\serg_proj_anytask\megafon base\bin\Debug\megafon base.pdb
+D:\github\serg_proj_anytask\megafon base\obj\Debug\megafon base.dll
+D:\github\serg_proj_anytask\megafon base\obj\Debug\megafon base.pdb

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BAD61674-FC38-4D60-9991-84C15F85B37F}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{3BDE74DD-E585-4EAD-AEF4-99F5C286F26A}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <RootNamespace>megafon_base</RootNamespace>
-    <AssemblyName>megafon_base</AssemblyName>
+    <AssemblyName>megafon base</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,8 +31,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="megafon_base.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

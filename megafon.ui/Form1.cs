@@ -94,7 +94,7 @@ namespace megafon.ui
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			var inforow = new addedit(new Megafon());
+			var inforow = new addedit(new Megafon(), mainList);
 			var dialog = inforow.ShowDialog(this);
 			if (dialog == DialogResult.OK)
 				add(inforow.info);
@@ -110,7 +110,7 @@ namespace megafon.ui
 		private void button5_Click(object sender, EventArgs e)
 		{
 			var id = listView1.SelectedItems[0].Index;
-			var inforow = new addedit(mainList[id]);
+			var inforow = new addedit(mainList[id], mainList);
 			var dialog = inforow.ShowDialog(this);
 			if (dialog == DialogResult.OK)
 			{

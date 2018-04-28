@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Collections.Generic;
 using megafon_base;
 
 namespace megafon.ui
 {
 	public partial class addedit : Form
 	{
-		public Megafon info { get; set; }
+		public Megafon info { get; private set; }
+		private List<Megafon> recivedList;
 
-		public addedit(Megafon mgfon)
+		public addedit(Megafon mgfon, List<Megafon> list)
 		{
 			InitializeComponent();
 
+			recivedList = list;
 			info = mgfon;
 			textBox1.Text = info.FullName;
 			textBox2.Text = info.Address;
@@ -41,7 +44,7 @@ namespace megafon.ui
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			if (textBox1.Text.Length < 4 || textBox2.Text.Length < 4 || maskedTextBox1.TextLength < 6)
+			if (textBox1.Text.Length < 4 || textBox2.Text.Length < 4 || maskedTextBox1.TextLength < 6 || recivedList.FindAll(x => x.PhoneNumber == maskedTextBox1.Text).Count > 0)
 				return;
 
 			info.FullName = textBox1.Text;

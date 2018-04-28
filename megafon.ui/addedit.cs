@@ -44,7 +44,7 @@ namespace megafon.ui
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			if (textBox1.Text.Length < 4 || textBox2.Text.Length < 4 || maskedTextBox1.TextLength < 6 || recivedList.FindAll(x => x.PhoneNumber == maskedTextBox1.Text).Count > 0)
+			if (textBox1.Text.Length < 4 || textBox2.Text.Length < 4 || maskedTextBox1.TextLength < 6 || recivedList.FindAll(x => x.PhoneNumber == maskedTextBox1.Text && x!=info).Count > 0)
 				return;
 
 			info.FullName = textBox1.Text;

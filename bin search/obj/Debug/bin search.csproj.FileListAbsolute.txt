@@ -11,3 +11,4 @@ D:\github\serg_proj_anytask\bin search\bin\Debug\bin search.pdb
 D:\github\serg_proj_anytask\bin search\obj\Debug\bin search.csproj.CoreCompileInputs.cache
 D:\github\serg_proj_anytask\bin search\obj\Debug\bin search.exe
 D:\github\serg_proj_anytask\bin search\obj\Debug\bin search.pdb
+D:\github\serg_proj_anytask\bin search\obj\Debug\bin search.csprojResolveAssemblyReference.cache

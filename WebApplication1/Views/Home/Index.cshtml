@@ -13,7 +13,15 @@
 }
 
 <h2>Index</h2>
-
+<div>
+    @using (Html.BeginForm("Upload", "Index", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <input type="file" name="file" />
+        <input type="submit" name="Submit" id="Submit" value="Upload" />
+    }
+</div>
+<br />
+<br />
 <p>
     @Html.ActionLink("Создать", "Create")
 </p>

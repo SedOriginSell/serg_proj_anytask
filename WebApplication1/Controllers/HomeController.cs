@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using WebApplication1.Models;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace WebApplication1.Controllers
 {
@@ -137,5 +139,25 @@ namespace WebApplication1.Controllers
 
 			return View();
 		}
+
+		[HttpPost]
+		public ActionResult Upload(HttpPostedFileBase file)
+		{
+			if (file != null && file.ContentLength > 0)
+			{
+				List<DbMegafon> buffer = (List<DbMegafon>)new XmlSerializer(typeof(List<DbMegafon>)).Deserialize(file.InputStream);
+
+				foreach (var value in buffer)
+				{
+
+					db.User.Add(value);
+					db.SaveChanges();
+				}
+			}
+
+			return RedirectToAction("Index");
+		}
+
+		
 	}
 }

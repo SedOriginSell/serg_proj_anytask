@@ -1,0 +1,13 @@
+D:\github\serg_proj_anytask\лицензии\obj\Debug\лицензии.csprojResolveAssemblyReference.cache
+D:\github\serg_proj_anytask\лицензии\obj\Debug\лицензии.Properties.Resources.resources
+D:\github\serg_proj_anytask\лицензии\obj\Debug\лицензии.csproj.GenerateResource.Cache
+D:\github\serg_proj_anytask\лицензии\obj\Debug\лицензии.csproj.CoreCompileInputs.cache
+D:\github\serg_proj_anytask\лицензии\obj\Debug\лицензии.Form1.resources
+D:\github\serg_proj_anytask\лицензии\bin\Debug\лицензии.exe.config
+D:\github\serg_proj_anytask\лицензии\bin\Debug\лицензии.exe
+D:\github\serg_proj_anytask\лицензии\bin\Debug\лицензии.pdb
+D:\github\serg_proj_anytask\лицензии\bin\Debug\megafon base.dll
+D:\github\serg_proj_anytask\лицензии\bin\Debug\megafon base.pdb
+D:\github\serg_proj_anytask\лицензии\bin\Debug\megafon base.dll.config
+D:\github\serg_proj_anytask\лицензии\obj\Debug\лицензии.exe
+D:\github\serg_proj_anytask\лицензии\obj\Debug\лицензии.pdb

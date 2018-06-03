@@ -9,6 +9,8 @@ using System.Web.Mvc;
 using WebApplication1.Models;
 using System.Xml.Serialization;
 using System.IO;
+using System.Web.Hosting;
+using OfficeOpenXml;
 
 namespace WebApplication1.Controllers
 {
@@ -158,6 +160,31 @@ namespace WebApplication1.Controllers
 			return RedirectToAction("Index");
 		}
 
-		
+		public ActionResult Download()
+		{
+			var ms = new MemoryStream();
+			FileInfo newFile = new FileInfo(HostingEnvironment.ApplicationPhysicalPath + @"\База данных megafon");
+			using (ExcelPackage Package = new ExcelPackage(newFile))
+			{
+
+				var worksheet = Package.Workbook.Worksheets.Add("База данных megafon");
+
+				var i = 1;
+				foreach (var g in db.User)
+				{
+					worksheet.Cells[i, 1].Value = g.ID;
+					worksheet.Cells[i, 2].Value = g.PhoneNumber;
+					worksheet.Cells[i, 3].Value = g.Address;
+					worksheet.Cells[i, 4].Value = g.BuyDate.ToString();
+					worksheet.Cells[i, 5].Value = g.Tariff.ToString();
+					i++;
+				}
+
+				// Заполнение файла Excel вышими данными
+				Package.SaveAs(ms);
+			}
+
+			return File(ms.ToArray(), "application/ooxml", (newFile.Name).Replace(" ", "_") + ".xlsx");
+		}
 	}
 }

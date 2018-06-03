@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 using System.IO;
 using megafon_base;
+using ildLicense;
 
 namespace megafon.ui
 {
@@ -32,6 +33,8 @@ namespace megafon.ui
 			InitializeComponent();
 		}
 
+		LicenseProj license;
+
 		private void Form1_Load(object sender, EventArgs e) {
 			listView1.Columns.Add("телефон", 150);
 			listView1.Columns.Add("ФИО", 200);
@@ -47,6 +50,19 @@ namespace megafon.ui
 
 			button4.Enabled = false;
 			button5.Enabled = false;
+
+			license = new LicenseProj(Properties.Resources._private, Properties.Resources._public);
+			OpenFileDialog licenseDialog = new OpenFileDialog();
+			licenseDialog.Filter = "Файл лицензии (*.xml)|*.xml";
+			panel1.Enabled = false;
+
+			//надо открыть любй файл
+			if (licenseDialog.ShowDialog() == DialogResult.OK)
+			{
+				Properties.Settings.Default.Save();
+				panel1.Enabled = license.TryLoadLicense(licenseDialog.FileName);
+			}
+
 		}
 
 		private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -132,6 +148,11 @@ namespace megafon.ui
 				FileName = fileName;
 				saveFileDialog1.FileName = FileName;
 			}
+		}
+
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }

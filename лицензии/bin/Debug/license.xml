@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<LicenseDto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LicenseeName>License</LicenseeName>
+  <ValidUntil>2018-06-24T21:32:42</ValidUntil>
+  <AllowedFeatures>
+    <string>Использование программы</string>
+  </AllowedFeatures>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>MaU47QPhOJsXXmojxrnXyNBPoVM=</DigestValue></Reference></SignedInfo><SignatureValue>QuCliHwSaaYeO28dQZ/V7H7anXOmO5hlQGjXpHYCWyHDyxq0m9KCmCFSn1iJo41ySC6UxljqKaH57UYnG/THS9hCxg1LFzMuojdhIl1Ov1e6mtccUEeT7ti7KbnuGC7BYim5R3EDsaO3rBfYwiCyHLmOHHAlhQr9zz6oA8H4sTQ=</SignatureValue></Signature></LicenseDto>

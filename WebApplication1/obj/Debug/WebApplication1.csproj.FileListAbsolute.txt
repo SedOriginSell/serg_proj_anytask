@@ -134,3 +134,5 @@ D:\github\serg_proj_anytask\WebApplication1\bin\zh-Hans\System.Spatial.resources
 D:\github\serg_proj_anytask\WebApplication1\bin\zh-Hant\System.Spatial.resources.dll
 D:\github\serg_proj_anytask\WebApplication1\obj\Debug\WebApplication1.Migrations.megafondb.resources
 D:\github\serg_proj_anytask\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
+D:\github\serg_proj_anytask\WebApplication1\bin\EPPlus.dll
+D:\github\serg_proj_anytask\WebApplication1\bin\EPPlus.xml

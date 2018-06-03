@@ -19,6 +19,10 @@
         <input type="file" name="file" />
         <input type="submit" name="Submit" id="Submit" value="Upload" />
     }
+    @using (Html.BeginForm("Download", "Home"))
+    {
+        <input type="submit" name="Submit" id="Submit" value="Скачать EXCEL" />
+    }
 </div>
 <br />
 <br />

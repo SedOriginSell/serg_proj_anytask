@@ -36,6 +36,8 @@
 			this.button5 = new System.Windows.Forms.Button();
 			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+			this.panel1 = new System.Windows.Forms.Panel();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// listView1
@@ -43,7 +45,7 @@
 			this.listView1.FullRowSelect = true;
 			this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.listView1.LabelWrap = false;
-			this.listView1.Location = new System.Drawing.Point(12, 11);
+			this.listView1.Location = new System.Drawing.Point(10, 3);
 			this.listView1.MultiSelect = false;
 			this.listView1.Name = "listView1";
 			this.listView1.Size = new System.Drawing.Size(450, 278);
@@ -54,7 +56,7 @@
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(471, 11);
+			this.button1.Location = new System.Drawing.Point(469, 3);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(140, 50);
 			this.button1.TabIndex = 1;
@@ -64,7 +66,7 @@
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(471, 67);
+			this.button2.Location = new System.Drawing.Point(469, 59);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(140, 53);
 			this.button2.TabIndex = 2;
@@ -75,7 +77,7 @@
 			// button3
 			// 
 			this.button3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.button3.Location = new System.Drawing.Point(471, 229);
+			this.button3.Location = new System.Drawing.Point(469, 221);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(66, 60);
 			this.button3.TabIndex = 3;
@@ -86,7 +88,7 @@
 			// button4
 			// 
 			this.button4.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.button4.Location = new System.Drawing.Point(545, 229);
+			this.button4.Location = new System.Drawing.Point(543, 221);
 			this.button4.Name = "button4";
 			this.button4.Size = new System.Drawing.Size(66, 60);
 			this.button4.TabIndex = 4;
@@ -96,7 +98,7 @@
 			// 
 			// button5
 			// 
-			this.button5.Location = new System.Drawing.Point(471, 179);
+			this.button5.Location = new System.Drawing.Point(469, 171);
 			this.button5.Name = "button5";
 			this.button5.Size = new System.Drawing.Size(140, 44);
 			this.button5.TabIndex = 5;
@@ -113,23 +115,33 @@
 			// 
 			this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
 			// 
+			// panel1
+			// 
+			this.panel1.Controls.Add(this.listView1);
+			this.panel1.Controls.Add(this.button5);
+			this.panel1.Controls.Add(this.button1);
+			this.panel1.Controls.Add(this.button4);
+			this.panel1.Controls.Add(this.button2);
+			this.panel1.Controls.Add(this.button3);
+			this.panel1.Location = new System.Drawing.Point(2, 12);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(618, 284);
+			this.panel1.TabIndex = 6;
+			this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(622, 295);
-			this.Controls.Add(this.button5);
-			this.Controls.Add(this.button4);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.listView1);
+			this.ClientSize = new System.Drawing.Size(631, 305);
+			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.Name = "Form1";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "база телефонов мегафона";
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -144,6 +156,7 @@
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 		private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+		private System.Windows.Forms.Panel panel1;
 	}
 }
 

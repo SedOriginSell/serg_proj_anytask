@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebApplication1.Models.DbMegafon>
+﻿@model IEnumerable<megafon_base.Megafon>
 
 @{
     ViewBag.Title = "Home Page";
@@ -14,7 +14,7 @@
 
 <h2>Index</h2>
 <div>
-    @using (Html.BeginForm("Upload", "Index", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    @using (Html.BeginForm("Upload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
         <input type="file" name="file" />
         <input type="submit" name="Submit" id="Submit" value="Upload" />

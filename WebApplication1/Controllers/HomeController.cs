@@ -11,11 +11,14 @@ using System.Xml.Serialization;
 using System.IO;
 using System.Web.Hosting;
 using OfficeOpenXml;
+using megafon_base;
+using System.Data.Entity.Migrations;
 
 namespace WebApplication1.Controllers
 {
 	public class HomeController : Controller
 	{
+		
 		private ApplicationDbContext db = new ApplicationDbContext();
 
 		// GET: DbMegafons
@@ -31,7 +34,7 @@ namespace WebApplication1.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			DbMegafon dbMegafon = db.User.Find(id);
+			Megafon dbMegafon = db.User.Find(id);
 			if (dbMegafon == null)
 			{
 				return HttpNotFound();
@@ -50,7 +53,7 @@ namespace WebApplication1.Controllers
 		// сведения см. в статье https://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Create([Bind(Include = "ID,PhoneNumber,FullName,Address,BuyDate,Tariff")] DbMegafon dbMegafon)
+		public ActionResult Create([Bind(Include = "ID,PhoneNumber,FullName,Address,BuyDate,Tariff")] Megafon dbMegafon)
 		{
 			if (ModelState.IsValid)
 			{
@@ -69,7 +72,7 @@ namespace WebApplication1.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			DbMegafon dbMegafon = db.User.Find(id);
+			Megafon dbMegafon = db.User.Find(id);
 			if (dbMegafon == null)
 			{
 				return HttpNotFound();
@@ -82,7 +85,7 @@ namespace WebApplication1.Controllers
 		// сведения см. в статье https://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public ActionResult Edit([Bind(Include = "ID,PhoneNumber,FullName,Address,BuyDate,Tariff")] DbMegafon dbMegafon)
+		public ActionResult Edit([Bind(Include = "ID,PhoneNumber,FullName,Address,BuyDate,Tariff")] Megafon dbMegafon)
 		{
 			if (ModelState.IsValid)
 			{
@@ -100,7 +103,7 @@ namespace WebApplication1.Controllers
 			{
 				return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
 			}
-			DbMegafon dbMegafon = db.User.Find(id);
+			Megafon dbMegafon = db.User.Find(id);
 			if (dbMegafon == null)
 			{
 				return HttpNotFound();
@@ -113,7 +116,7 @@ namespace WebApplication1.Controllers
 		[ValidateAntiForgeryToken]
 		public ActionResult DeleteConfirmed(int id)
 		{
-			DbMegafon dbMegafon = db.User.Find(id);
+			Megafon dbMegafon = db.User.Find(id);
 			db.User.Remove(dbMegafon);
 			db.SaveChanges();
 			return RedirectToAction("Index");
@@ -147,7 +150,7 @@ namespace WebApplication1.Controllers
 		{
 			if (file != null && file.ContentLength > 0)
 			{
-				List<DbMegafon> buffer = (List<DbMegafon>)new XmlSerializer(typeof(List<DbMegafon>)).Deserialize(file.InputStream);
+				List<Megafon> buffer = (List<Megafon>)new XmlSerializer(typeof(List<Megafon>)).Deserialize(file.InputStream);
 
 				foreach (var value in buffer)
 				{

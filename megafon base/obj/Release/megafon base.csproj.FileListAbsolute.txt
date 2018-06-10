@@ -10,3 +10,4 @@ D:\github\serg_proj_anytask\megafon base\bin\Release\System.Security.Cryptograph
 D:\github\serg_proj_anytask\megafon base\bin\Release\System.Security.Cryptography.Xml.dll
 D:\github\serg_proj_anytask\megafon base\bin\Release\System.Security.Permissions.dll
 D:\github\serg_proj_anytask\megafon base\bin\Release\System.Security.Principal.Windows.dll
+D:\github\serg_proj_anytask\megafon base\obj\Release\megafon base.csprojResolveAssemblyReference.cache

@@ -57,11 +57,8 @@ namespace megafon.ui
 			panel1.Enabled = false;
 
 			//надо открыть любй файл
-			if (licenseDialog.ShowDialog() == DialogResult.OK)
-			{
-				Properties.Settings.Default.Save();
+			if (licenseDialog.ShowDialog() == DialogResult.OK)	
 				panel1.Enabled = license.TryLoadLicense(licenseDialog.FileName);
-			}
 
 		}
 

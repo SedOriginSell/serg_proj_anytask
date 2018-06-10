@@ -6,6 +6,7 @@ namespace megafon_base
 
 	public class Megafon
 	{
+		public int ID { get; set; }
 		//номер телефона
 		public string PhoneNumber { get; set; }
 
